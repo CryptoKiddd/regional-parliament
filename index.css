@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "HelveticaNeueLTGeo55RomanCaps";
+  src: url("fonts/helvetica-neue-lt-geo-55-roman-caps.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTGeo55Roman";
+  src: url("fonts/helvetica-neue-lt-geo-55-roman.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTGeo65MediumCaps";
+  src: url("fonts/helvetica-neue-lt-geo-65-medium-caps.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTGeo75BoldCaps";
+  src: url("fonts/helvetica-neue-lt-geo-75-bold-caps.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTGeo65Medium";
+  src: url("fonts/helvetica-neue-lt-geo-65-medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTGeo75Bold";
+  src: url("fonts/helvetica-neue-lt-geo-75-bold.ttf") format("truetype");
+}
+
+body {
+  font-family: "HelveticaNeueLTGeo55RomanCaps", "HelveticaNeueLTGeo55Roman",
+    "HelveticaNeueLTGeo65MediumCaps", "HelveticaNeueLTGeo75BoldCaps",
+    "HelveticaNeueLTGeo65Medium", "HelveticaNeueLTGeo75Bold", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+ul, li{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.navigation{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding-inline: 140px;
+  z-index: 100;
+  background-color: white;
+}
+.logo{
+  height: 58px;
+  width: 82px;
+}
+nav ul {
+  display: flex;
+  gap: 32px;
+  
+}
+.nav-item{
+  
+  padding: 7px 3px;
+  transition: 550ms ease;
+  
+}
+nav ul li img{
+ opacity: 0;transition: 550ms ease;
+  
+}
+.nav-item:hover  .nav-arc{
+ opacity: 1;
+  
+}
+.nav-item:hover{
+  scale: 1.1;
+}
+.nav-socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.nav-langs{
+  border: 1px solid rgb(209, 209, 209);
+  padding: 5px;
+  border-radius: 3px;
+  transition: 350ms ease;
+  cursor: pointer;
+}
+.nav-langs:hover{
+  background: #034ea2;
+  color: white;
+}
+.nav-socials a:hover{
+  scale: 1.1;
+}
+
+
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/people-taking-part-h.jpeg");
+  display: flex;
+  position: relative;
+
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#hero::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #034ea2;
+  opacity: 0.85;
+}
+#hero main,
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 170px;
+  z-index: 5;
+}
+.content {
+  font-family: "Helvetica Neue LT GEO Caps";
+  max-width: 660px;
+  width: 100%;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+  gap: 15px;
+  font-size: 22px;
+}
+.content h1 {
+  font-size: 50px;
+  line-height: 55px;
+}
+
+.countdown {
+  display: flex;
+  color: white;
+  gap: 20px;
+}
+.countdown-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 0 10px;
+  padding-left: 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.103);
+}
+.countdown-item:nth-child(1) {
+  border: none;
+}
+.countdown-item img {
+  align-self: flex-end;
+}
+.countdown-item div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.countdown-label {
+  font-family: "Helvetica Neue LT GEO";
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  color: #ffffff;
+}
+#hero main button{
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
+  background: #034EA2;
+  filter: drop-shadow(3px 6px 7.5px rgba(0,0,0,0.05 ));
+  padding: 25px 0px;
+  border: none;
+  color: white;
+  margin-top: -150px;
+  font-size: 18px;
+  cursor: pointer;
+}
