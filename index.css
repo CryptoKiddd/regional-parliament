@@ -285,7 +285,8 @@ width: 100%;
   transition:360ms ease;
 }
 .popup button:hover{
-  scale: 1.05;
+  scale: 1.01;
+  background-color: #0DB1E6;
 }
 .exit-popup{
 
