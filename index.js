@@ -19,3 +19,15 @@ function countdown() {
   }
   
   setInterval(countdown, 1000);
+
+  const popup = document.querySelector(".popup")
+  const registerBtn = document.querySelector("#registerbtn")
+  const closePopup = document.querySelector(".exit-popup")
+
+registerBtn.addEventListener("click",()=>{
+
+popup.classList.add('open-popup')
+})
+closePopup.addEventListener("click",()=>{
+  popup.classList.remove('open-popup')
+})

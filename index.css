@@ -57,6 +57,10 @@ a {
   padding-inline: 140px;
   z-index: 100;
   background-color: white;
+
+
+
+
 }
 .logo{
   height: 58px;
@@ -70,7 +74,17 @@ nav ul {
 .nav-item{
   
   padding: 7px 3px;
+  opacity: 0.60;
   transition: 550ms ease;
+  
+}
+.nav-item a{ 
+ 
+
+
+  font-family: "Helvetica Neue LT GEO Caps";
+  font-size: 14px;
+  color: black;
   
 }
 nav ul li img{
@@ -83,6 +97,7 @@ nav ul li img{
 }
 .nav-item:hover{
   scale: 1.1;
+  opacity: 1;
 }
 .nav-socials{
   display: flex;
@@ -117,6 +132,7 @@ nav ul li img{
   align-items: center;
   justify-content: center;
   gap: 20px;
+  overflow: hidden;
 }
 #hero::before {
   position: absolute;
@@ -198,6 +214,94 @@ nav ul li img{
   margin-top: -150px;
   font-size: 18px;
   cursor: pointer;
+  transition:360ms ease;
+}
+#hero main button:hover{
+background: #0DB1E6;
+}
+
+.popup{
+  position: absolute;
+  background-color: #034EA2;
+  border-radius: 20px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 80%;
+  width: 80%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  transition: 1200ms ease;
+ top:-100%
+}
+.open-popup{
+  top: 50%;
+}
+.popup form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+  gap: 20px;
+}
+.popup form input{
+  width: 100%;
+  
+  border: 1px solid #0072D8;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: none;
+
+}
+.popup form input:focus{
+outline: none;
+
+}
+.popup form input::placeholder{
+color: #0072D8;
+
+}
+.popup button{
+width: 100%;
+  border-radius: 10px;
+  background: #0072D8;
+  filter: drop-shadow(3px 6px 7.5px rgba(0,0,0,0.05 ));
+  padding: 15px 12px;
+  border: none;
+  color: white;
+
+  font-size: 18px;
+  cursor: pointer;
+  transition:360ms ease;
+}
+.popup button:hover{
+  scale: 1.05;
+}
+.exit-popup{
+
+  background: red;
+  /* text-align: center; */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #d3d0d0;
+  color:#034EA2 ;
+  text-align: center;
+  vertical-align: top;
+  font-size: 18px;
+  cursor: pointer;
+
+ 
 }
 
 
