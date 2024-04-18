@@ -31,3 +31,15 @@ popup.classList.add('open-popup')
 closePopup.addEventListener("click",()=>{
   popup.classList.remove('open-popup')
 })
+
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});

@@ -32,6 +32,7 @@ body {
   font-family: "HelveticaNeueLTGeo55RomanCaps", "HelveticaNeueLTGeo55Roman",
     "HelveticaNeueLTGeo65MediumCaps", "HelveticaNeueLTGeo75BoldCaps",
     "HelveticaNeueLTGeo65Medium", "HelveticaNeueLTGeo75Bold", Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 * {
