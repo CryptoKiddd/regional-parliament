@@ -1,5 +1,5 @@
 function countdown() {
-    const endDate = new Date("2024-12-31T23:59:59").getTime(); // Change this to your desired end date
+    const endDate = new Date("2024-04-22T23:59:59").getTime(); // atvlis wertili
     const now = new Date().getTime();
     const distance = endDate - now;
   
