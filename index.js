@@ -20,6 +20,22 @@ function countdown() {
   
   setInterval(countdown, 1000);
 
+
+  //on scorll nav height change
+  window.addEventListener("scroll",function(){
+    const nav = document.querySelector('.navigation')
+    if (window.scrollY >= 50) { 
+      nav.style.height = '70px'; 
+    } else {
+      nav.style.height = '100px'; // Default height when not scrolled
+    }
+  })
+
+
+
+
+  //popup
+
   const popup = document.querySelector(".popup")
   const registerBtn = document.querySelector("#registerbtn")
   const closePopup = document.querySelector(".exit-popup")
