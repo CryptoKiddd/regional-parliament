@@ -50,6 +50,7 @@ li {
 }
 a {
   text-decoration: none;
+
 }
 
 .navigation {
@@ -249,6 +250,7 @@ nav ul li img {
   padding: 10px 12px;
   border-radius: 10px;
   background: none;
+  color: white;
 }
 .popup form input:focus {
   outline: none;
@@ -306,7 +308,8 @@ nav ul li img {
   align-items: center;
   flex-direction: column;
 
-  padding: 80px 220px;
+  padding: 110px 220px;
+  padding-bottom: 50px;
   gap: 180px;
 }
 
@@ -461,7 +464,8 @@ conference
 
   flex-direction: column;
 
-  padding: 80px 220px;
+  padding: 110px 220px;
+  padding-bottom: 50px;
   gap: 65px;
 }
 .conference-header {
@@ -567,22 +571,24 @@ agenda
   display: flex;
   position: relative;
   flex-direction: column;
-  padding: 80px 220px;
+  padding: 110px 220px;
+  padding-bottom: 50px;
   gap: 65px;
 }
 
-.agenda-header{
+.agenda-header {
   display: flex;
-  align-items: center;font-family: "Helvetica Neue LT GEO Caps";
+  align-items: center;
+  font-family: "Helvetica Neue LT GEO Caps";
   font-size: 34px;
-  gap:16px;
+  gap: 16px;
   font-weight: normal;
 }
-.agenda-header img{
- width: 38px;
- height: 39px;
+.agenda-header img {
+  width: 38px;
+  height: 39px;
 }
-.agenda-content{
+.agenda-content {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -592,63 +598,219 @@ agenda
   padding: 20px;
   margin-top: 62px;
 }
-.agenda-content h2{
+.agenda-content h2 {
   margin-left: 300px;
   align-self: flex-start;
   font-weight: 600;
   color: #0072d8;
   font-size: 34px;
 }
-.agenda-subject{
+.agenda-subject {
   display: flex;
   flex-direction: column;
   gap: 10px;
   position: relative;
-  
 }
-.agenda-subject li{
+.agenda-subject li {
   display: flex;
   gap: 50px;
   font-family: "Helvetica Neue LT GEO";
-font-size: 14px;
-transition: 350ms ease;
-cursor: pointer;
-height: 50px;
-
+  font-size: 14px;
+  transition: 350ms ease;
+  cursor: pointer;
+  height: 50px;
 }
 .agenda-subject li span {
   font-size: 18px;
   color: #d3d0d0;
-
 }
-.agenda-subject li:hover{
-scale: 1.1;
-
+.agenda-subject li:hover {
+  scale: 1.1;
 }
 
-
-.agenda-subject-arc-top{
-position: absolute;
-top: -205px;
-left: -125px;
-width: 235px;
-height: 235px;
+.agenda-subject-arc-top {
+  position: absolute;
+  top: -205px;
+  left: -125px;
+  width: 235px;
+  height: 235px;
 }
-.agenda-subject-arc-bottom{
+.agenda-subject-arc-bottom {
   position: absolute;
   right: -205px;
   bottom: -125px;
   width: 235px;
   height: 235px;
-  
 }
-.agenda-desc{
+.agenda-desc {
   max-width: 900px;
   width: 100%;
   margin-top: 60px;
 }
-.agenda-sponsors{
+.agenda-sponsors {
   display: flex;
   gap: 50px;
   align-items: center;
+}
+#contacts {
+  padding: 110px 220px;
+  height: 100vh;
+ 
+  width: 100%;
+  overflow-y: hidden;
+  position: relative;
+  display: flex;
+}
+#contacts::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #034EA2;
+  opacity: 0.25;
+  z-index: 10;
+}
+.carousel {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+  
+
+  transition: 750ms ease;
+
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.carousel-btns {
+  display: flex;
+  gap: 10px;
+
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 11;
+}
+.carousel-btn {
+  width: 13px;
+  height: 13px;
+  border-radius: 10px;
+  background: #7FC4FD;
+  transition: 350ms ease;
+  z-index: 11;
+  cursor: pointer;
+  border: none;
+}
+.active-bullet{
+  background: #007FEB;
+}
+.contacts-content{
+  z-index: 10;
+  color: white;
+  font-family: "Helvetica Neue LT GEO";
+font-size: 16px;
+
+}
+.contacts-content header{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: "Helvetica Neue LT GEO Caps";
+font-size: 34px;
+font-weight: bold;
+
+margin-bottom: 44px;
+}
+.contacts-content header img{
+  width: 39px;
+  height: 38px;
+  filter: brightness(10000%); 
+}
+#contacts ul li {
+  margin-bottom: 25px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #034EA2;
+  padding: 60px 270px;
+  font-family: "Helvetica Neue LT GEO";
+font-size: 14px;
+gap: 60px;
+height: 200px;
+width: 100%;
+color: white;
+}
+
+footer ul{
+  border-inline: 1px solid  rgba(255, 255, 255, 0.596);
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 200px;
+  max-width: 300px;
+  width: 100%;
+  display: flex;flex-direction: column;
+  
+  justify-content: center;
+}
+footer ul li a{
+  color: rgba(255, 255, 255, 0.596);
+  padding: 10px 2px;
+cursor: pointer;
+max-width: 160px;
+width: 100%;
+transition: 350ms ease;
+}
+footer ul li a:hover{
+  color: rgb(255, 255, 255);
+
+}
+.footer-socials{
+  display: flex;
+  align-items: center;
+ 
+}
+.footer-socials a:nth-child(2){
+  border-left: 1px solid rgba(255, 255, 255, 0.596);
+  padding-left: 10px;
+  margin-left: 10px;
+
+}
+.scroll-up{
+  background: #0072D8;
+  width: 200px;
+  rotate: -90deg;
+  text-align: center;
+  vertical-align: center;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+ 
+}
+.scroll-up a{
+  height: 100%;
+  margin-top: -7px;
+  cursor: pointer;
+  color: white;
+}
+.scroll-up img{
+  rotate: 90deg;
+  width: 12px;
+  height: 12px;
 }

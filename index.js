@@ -59,3 +59,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
+
+
+
+const carouselBtns = document.querySelectorAll(".carousel-btn")
+const carousel = document.querySelector(".carousel")
+carouselBtns[0].classList.add('active-bullet')
+carouselBtns.forEach((btn,idx)=>{
+  btn.addEventListener("click", function(){
+    carouselBtns.forEach(bullet => {
+      bullet.classList.remove("active-bullet");
+    });
+
+    // Add active class to clicked bullet
+    btn.classList.add("active-bullet");
+
+
+    carousel.style.transform = `translateY(-${idx * 100 }%)`;
+
+  })
+  
+
+})
