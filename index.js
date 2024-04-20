@@ -19,17 +19,22 @@ function countdown() {
   }
   
   setInterval(countdown, 1000);
+  const nav = document.querySelector('.navigation')
+  const navWrapper = document.querySelector('.nav-wrapper')
+
 
 
   //on scorll nav height change
+
+if (window.innerWidth > 930){
   window.addEventListener("scroll",function(){
-    const nav = document.querySelector('.navigation')
     if (window.scrollY >= 70) { 
-      nav.style.height = '70px'; 
+      navWrapper.style.height = '70px'; 
     } else {
-      nav.style.height = '100px'; // Default height when not scrolled
+      navWrapper.style.height = '100px'; // Default height when not scrolled
     }
   })
+}
 
 
 
@@ -80,4 +85,11 @@ carouselBtns.forEach((btn,idx)=>{
   })
   
 
+})
+
+const openBtn = document.querySelector(".openbtn")
+
+openBtn.addEventListener('click',function(){
+  this.classList.toggle('active')
+  nav.classList.toggle('toggle-nav')
 })

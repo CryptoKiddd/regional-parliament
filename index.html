@@ -7,40 +7,44 @@
     <script defer src="index.js"></script>
     <title>Document</title>
   </head>
-  <body>
-    <div class="navigation">
-      <a href="#hero">
-        <img src="images/logo.png" alt="logo" class="logo" />
-      </a>
-      <nav>
-        <ul>
-          <li class="nav-item">
-            <img class="nav-arc" src="images/arc.png" alt="" />
-            <a href="#hero">მთავარი </a>
-          </li>
-          <li class="nav-item">
-            <img class="nav-arc" src="images/arc.png" alt="" />
-            <a href="#project">პროექტის შესახებ</a>
-          </li>
-          <li class="nav-item">
-            <img class="nav-arc" src="images/arc.png" alt="" />
-            <a href="#conference">კონფერენციის შესახებ</a>
-          </li>
-          <li class="nav-item">
-            <img class="nav-arc" src="images/arc.png" alt="" />
-            <a href="#agenda">დღის წესრიგი</a>
-          </li>
-          <li class="nav-item">
-            <img class="nav-arc" src="images/arc.png" alt="" />
-            <a href="#contacts">კონტაქტი</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="nav-socials">
-        <a href=""><img src="images/fb.png" alt="" /></a>
-        <a href=""><img src="images/mail.png" alt="" /></a>
-        <div class="nav-langs">eng</div>
+  <body  style="overflow-y: hidden;">
+    <div class="nav-wrapper">
+
+      <div class="navigation">
+        <a href="#hero">
+          <img src="images/logo.png" alt="logo" class="logo" />
+        </a>
+        <nav>
+          <ul>
+            <li class="nav-item">
+              <img class="nav-arc" src="images/arc.png" alt="" />
+              <a href="#hero">მთავარი </a>
+            </li>
+            <li class="nav-item">
+              <img class="nav-arc" src="images/arc.png" alt="" />
+              <a href="#project">პროექტის შესახებ</a>
+            </li>
+            <li class="nav-item">
+              <img class="nav-arc" src="images/arc.png" alt="" />
+              <a href="#conference">კონფერენციის შესახებ</a>
+            </li>
+            <li class="nav-item">
+              <img class="nav-arc" src="images/arc.png" alt="" />
+              <a href="#agenda">დღის წესრიგი</a>
+            </li>
+            <li class="nav-item">
+              <img class="nav-arc" src="images/arc.png" alt="" />
+              <a href="#contacts">კონტაქტი</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-socials">
+          <a href=""><img src="images/fb.png" alt="" /></a>
+          <a href=""><img src="images/mail.png" alt="" /></a>
+          <div class="nav-langs">eng</div>
+        </div>
       </div>
+      <div class="openbtn"><span></span><span></span><span></span></div>
     </div>
 
     <section id="hero">
@@ -177,13 +181,7 @@
               ქვემო სილეზიის რეგიონული პარლამენტი რეგიონის ძირითადი
               საკანონმდებლო და მაკონტროლებელი ორგანოა, რომლის საქმიანობის
               მთავარი მიზანია უზრუნველყოს რეგიონის მოსახლეობის ინტერესების
-              დაცვა, აირჩიოს რეგიონის აღმასრულებელი ხელისუფლების გრემიუმი,
-              დაამტკიცოს კანონი რეგიონის ბიუჯეტის შესახებ, განსაზღვროს რეგიონის
-              საერთაშორისო თანამშრომლობის პრიორიტეტები, აკონტროლოს რეგიონული
-              ბიუჯეტი, დააწესოს კანონით განსაზღვრულ ჩარჩოებში რეგიონული
-              მოსაკრებელი, შეაფასოს აღმასრულებელი ორგანოების საქმიანობის
-              ანგარიშები, მიიღოს გადაწყვეტილება სტიპენდიების დანიშვნის შესახებ
-              და სხვა.
+            
             </p>
           </div>
           <div class="right">
@@ -561,7 +559,7 @@
 
       agendaTopTl.from('.agenda-subject-arc-top',{
         rotate:0,
-        x:-200,
+        x:-100,
         duration:2,
         opacity:0
 
@@ -617,7 +615,7 @@
       const lenis = new Lenis();
 
       lenis.on("scroll", (e) => {
-        console.log(e);
+       
       });
 
       function raf(time) {

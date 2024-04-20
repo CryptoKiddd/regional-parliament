@@ -33,6 +33,7 @@ body {
     "HelveticaNeueLTGeo65MediumCaps", "HelveticaNeueLTGeo75BoldCaps",
     "HelveticaNeueLTGeo65Medium", "HelveticaNeueLTGeo75Bold", Arial, sans-serif;
   scroll-behavior: smooth;
+  overflow-y: hidden;
  
 }
 ::-webkit-scrollbar {
@@ -53,19 +54,26 @@ a {
   text-decoration: none;
 
 }
-
-.navigation {
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  height: 100px;
-  align-items: center;
-  padding-inline: 140px;
+.nav-wrapper{
   z-index: 100;
   background-color: white;
   transition: 500ms ease;
   box-shadow: 0px 5px 12px -5px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  /* height: 100px; */
+  align-items: center;
+  padding-inline: 140px;
+  width: 100%;
+  
 }
 .logo {
   height: 58px;
@@ -116,6 +124,58 @@ nav ul li img {
 .nav-socials a:hover {
   scale: 1.1;
 }
+.openbtn {
+  background: #10568f;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 101;
+  display: none;
+}
+
+.openbtn span {
+  position: absolute;
+  background: #fff;
+  display: inline-block;
+  border-radius: 3px;
+  left: 14px;
+  height: 3px;
+  transition: all .4s;
+  &:nth-of-type(1) {
+      top: 15px;
+      width: 45%;
+  }
+  &:nth-of-type(2) {
+      top: 23px;
+      width: 35%;
+  }
+  &:nth-of-type(3) {
+      top: 31px;
+      width: 20%;
+  }
+}
+
+.openbtn.active span{
+  &:nth-of-type(1) {
+      width: 45%;
+      top: 18px;
+      left: 14px;
+      transform: translateY(6px) rotate(-135deg);
+  }
+  &:nth-of-type(2) {
+      opacity: 0;
+  }
+  &:nth-of-type(3) {
+      width: 45%;
+      top: 30px;
+      left: 14px;
+      transform: translateY(-6px) rotate(135deg);
+  }
+}
 
 #hero {
   width: 100%;
@@ -123,6 +183,7 @@ nav ul li img {
   background-image: url("images/people-taking-part-h.jpeg");
   display: flex;
   position: relative;
+
 
   align-items: center;
   justify-content: center;
@@ -169,6 +230,8 @@ nav ul li img {
 .countdown {
   display: flex;
   color: white;
+  max-width: 550px;
+  width: 100%;
   gap: 20px;
 }
 .countdown-item {
@@ -333,6 +396,10 @@ nav ul li img {
 }
 .proj-top-left {
   max-width: 562px;
+  width: 100%;
+}
+.proj-top-right {
+  max-width: 662px;
   width: 100%;
 }
 
@@ -579,6 +646,7 @@ agenda
   flex-direction: column;
   padding: 110px 220px;
   padding-bottom: 50px;
+  overflow-x: hidden;
   gap: 65px;
 }
 
@@ -605,7 +673,7 @@ agenda
   margin-top: 62px;
 }
 .agenda-content h2 {
-  margin-left: 300px;
+  margin-left: 30%;
   align-self: flex-start;
   font-weight: 600;
   color: #0072d8;
@@ -642,8 +710,8 @@ color: white;
 
 .agenda-subject-arc-top {
   position: absolute;
-  top: -205px;
-  left: -125px;
+  top: -175px;
+  left: -175px;
   width: 235px;
   height: 235px;
   rotate: 360;
@@ -827,3 +895,224 @@ footer ul li a:hover{
   width: 12px;
   height: 12px;
 }
+
+@media(width < 1550px){
+  #project,#agenda,#conference{
+    padding: 110px 140px ;
+
+  }
+  .proj-top{
+    gap: 40px;
+  }
+  .proj-organization{
+    padding: 24px 30px;
+  }
+  .proj-organization .left{
+    padding-right: 40px;
+
+  }
+}
+@media(width < 1350px){
+  .agenda-subject-arc-top,.agenda-subject-arc-bottom{
+    width: 175px;
+    height: 175px;
+  }
+  .agenda-subject-arc-top{
+    top: -125px;
+    left: -125px;
+  }
+  
+  .agenda-subject-arc-bottom{
+    right: -135px;
+  }
+  .agenda-content{
+    gap: 40px;
+  }
+}
+@media(width < 1240px){
+  #project,#agenda,#conference{
+    padding: 110px 40px ;
+
+  }
+  #agenda{
+    padding-top: 50px;
+  }
+  .agenda-content{
+    gap: 20px;
+    padding: 0;
+  }
+  .navigation{
+    padding-inline: 70px;
+  }
+  nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  .proj-top p{
+    font-size: 14px;
+  }
+  .proj-top-left .header p{
+    font-size: 32px;
+  }
+  .agenda-subject-arc-top,.agenda-subject-arc-bottom{
+    width: 115px;
+    height: 115px;
+  }
+  .agenda-subject-arc-top{
+    top: -75px;
+    left: -75px;
+  }
+  
+  .agenda-subject-arc-bottom{
+    right: -75px;
+    bottom: -55px;
+  }
+}
+@media(width < 1040px){
+  #project,#agenda,#conference{
+    padding: 110px 40px ;
+
+  }
+  .navigation{
+    padding-inline: 30px;
+  }
+  nav ul {
+    display: flex;
+    gap: 15px;
+  }
+  .proj-top p{
+    font-size: 14px;
+  }
+  .proj-top-left .header p{
+    font-size: 32px;
+  }
+  .agenda-subject li{
+    gap: 15px;
+  }
+  .agenda-list p {
+    font-size: 12px;
+  }
+  .agenda-sponsors{
+    gap: 0;
+  }
+}
+
+
+
+@media(width < 969px){
+  #project,#agenda,#conference{
+    padding: 70px 20px ;
+
+  }
+  #hero{
+    height: 100vh;
+
+  }
+  .proj-top{
+    flex-direction: column;
+    gap: 0;
+  }
+  .proj-top-left,.proj-top-right{
+    gap: 20px;
+  }
+  .proj-top-right{
+    margin-top: 90px;
+  }
+  .countdown{
+    gap: 0px;
+    justify-content: center;
+  }
+  .countdown-item {
+    font-size: 14px;
+  }
+  .countdown-label{
+    font-size: 18px;
+  }
+  #hero main button {
+    width: 350px;
+  }
+  
+  .navigation{
+    padding-inline: 15px;
+  }
+  nav ul {
+    display: flex;
+    gap: 12px;
+  }
+  .proj-top p{
+    font-size: 14px;
+  }
+  .proj-top-left .header p{
+    font-size: 32px;
+  }
+  #contacts{
+    padding: 110px 100px;
+  }
+}
+
+@media(width < 906px){
+  .openbtn{
+    display: block;
+  }
+  #project,#agenda,#conference{
+    padding: 70px 20px ;
+
+  }
+  .nav-wrapper{
+    position: sticky;
+    height: 0;
+    top:0;
+    left: -100%;
+    transition: 550ms ease;
+     
+  }
+  .navigation{
+    position: absolute;
+    
+    height: 100vh;
+    width: 250px;
+    padding: 50px 0;
+    
+    flex-direction: column;
+    background: white;
+    transition: 550ms ease;
+    
+    transform:translate(-255px,50%) 
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .nav-item{
+    width: 100%;
+  }
+  .nav-arc{
+    opacity: 1;
+  }
+  .nav-item a{
+    width: 100%;
+    height: 100%;
+  }
+  .proj-top p{
+    font-size: 14px;
+  }
+  .proj-top-left .header p{
+    font-size: 32px;
+  }
+  #contacts{
+    padding: 110px 100px;
+  }
+  .toggle-nav{
+  
+    transform:translate(0,50%) ;   
+height: 100vh;
+transition: 550ms ease;
+
+  }
+}
+
+
+
+
