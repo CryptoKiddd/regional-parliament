@@ -33,6 +33,7 @@ body {
     "HelveticaNeueLTGeo65MediumCaps", "HelveticaNeueLTGeo75BoldCaps",
     "HelveticaNeueLTGeo65Medium", "HelveticaNeueLTGeo75Bold", Arial, sans-serif;
   scroll-behavior: smooth;
+ 
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -146,6 +147,7 @@ nav ul li img {
   justify-content: center;
   gap: 170px;
   z-index: 5;
+  transition: 500ms;
 }
 .content {
   font-family: "Helvetica Neue LT GEO Caps";
@@ -157,6 +159,7 @@ nav ul li img {
   color: #ffffff;
   gap: 15px;
   font-size: 22px;
+  opacity: 1;
 }
 .content h1 {
   font-size: 50px;
@@ -311,6 +314,7 @@ nav ul li img {
   padding: 110px 220px;
   padding-bottom: 50px;
   gap: 180px;
+  overflow-x: hidden;
 }
 
 .proj-top {
@@ -318,6 +322,7 @@ nav ul li img {
   justify-content: center;
   align-items: flex-start;
   gap: 145px;
+
 }
 .proj-top-left,
 .proj-top-right {
@@ -406,6 +411,7 @@ nav ul li img {
   align-items: flex-start;
   justify-content: center;
   gap: 23px;
+
 }
 .proj-bottom-header {
   display: flex;
@@ -634,6 +640,7 @@ agenda
   left: -125px;
   width: 235px;
   height: 235px;
+  rotate: 360;
 }
 .agenda-subject-arc-bottom {
   position: absolute;

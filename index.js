@@ -24,7 +24,7 @@ function countdown() {
   //on scorll nav height change
   window.addEventListener("scroll",function(){
     const nav = document.querySelector('.navigation')
-    if (window.scrollY >= 50) { 
+    if (window.scrollY >= 70) { 
       nav.style.height = '70px'; 
     } else {
       nav.style.height = '100px'; // Default height when not scrolled
