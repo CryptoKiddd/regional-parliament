@@ -619,19 +619,25 @@ agenda
 }
 .agenda-subject li {
   display: flex;
+  align-items: center;
   gap: 50px;
   font-family: "Helvetica Neue LT GEO";
   font-size: 14px;
   transition: 350ms ease;
   cursor: pointer;
   height: 50px;
+  padding: 10px;
+  border-radius: 10px;
 }
 .agenda-subject li span {
-  font-size: 18px;
+  font-size: 16px;
+  transition: 250ms ease;
   color: #d3d0d0;
 }
-.agenda-subject li:hover {
-  scale: 1.1;
+.agenda-list:hover {
+scale: 1.5;
+background: #0072d8;
+color: white;
 }
 
 .agenda-subject-arc-top {
