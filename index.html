@@ -402,15 +402,18 @@
         <li><a href="#conference">კონფერენციის შესახებ </a></li>
         <li><a href="#agenda">დღის წესრიგი </a></li>
       </ul>
-      <span>აჭარის უმაღლესი საბჭო </span>
-      <span>ელ-ფოსტა: conference2024@sca.ge </span>
-      <div class="footer-socials">
-        <a href="facebook.com">
-          <img src="images/fb-w.png" alt="" />
-        </a>
-        <a href="">
-          <img src="images/mail-w.png" alt="" />
-        </a>
+      <div class="footer-center">
+
+        <span>აჭარის უმაღლესი საბჭო </span>
+        <span>ელ-ფოსტა: conference2024@sca.ge </span>
+        <div class="footer-socials">
+          <a href="facebook.com">
+            <img src="images/fb-w.png" alt="" />
+          </a>
+          <a href="">
+            <img src="images/mail-w.png" alt="" />
+          </a>
+        </div>
       </div>
       <div class="scroll-up">
         <a href="#hero">ასქროლე </a>
@@ -438,21 +441,12 @@
         
         duration:1,
         opacity:0,
+        y:150,
         ease: "sine.out",
-        scrub:true
-       
+    
       })
-      heroTl.from('.logo',{
-        x:-100,
-        rotate:360,
-        duration:1
-      });
-      heroTl.to('.content',{
-      
-        opacity:1,
-        ease: "sine.out",
-       
-      })
+ 
+    
 
 
       let projTopTl = gsap.timeline({
