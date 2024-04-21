@@ -218,7 +218,7 @@ nav ul li img {
 }
 .content h1 {
   font-size: 50px;
-  line-height: 35px;
+  line-height: 55px;
 }
 
 .countdown {
@@ -1309,6 +1309,9 @@ footer ul li a:hover {
     height: 100%;
     z-index: 102;
     border-radius: 0;
+  }
+  .content h1{
+    line-height: 35px;
   }
 }
 @media (width < 385px) {
