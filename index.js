@@ -93,3 +93,9 @@ openBtn.addEventListener('click',function(){
   this.classList.toggle('active')
   nav.classList.toggle('toggle-nav')
 })
+
+const lang = document.querySelector('.nav-langs')
+
+lang.addEventListener('click',function(){
+  this.textContent === "eng" ? this.textContent = "ქარ":this.textContent = "eng"
+})
