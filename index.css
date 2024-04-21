@@ -33,8 +33,6 @@ body {
     "HelveticaNeueLTGeo65MediumCaps", "HelveticaNeueLTGeo75BoldCaps",
     "HelveticaNeueLTGeo65Medium", "HelveticaNeueLTGeo75Bold", Arial, sans-serif;
   scroll-behavior: smooth;
-
- 
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -52,9 +50,8 @@ li {
 }
 a {
   text-decoration: none;
-
 }
-.nav-wrapper{
+.nav-wrapper {
   z-index: 100;
   background-color: white;
   transition: 500ms ease;
@@ -64,7 +61,6 @@ a {
   display: flex;
   align-items: center;
   height: 100px;
-  
 }
 .navigation {
   display: flex;
@@ -73,7 +69,6 @@ a {
   align-items: center;
   padding-inline: 140px;
   width: 100%;
-  
 }
 .logo {
   height: 58px;
@@ -144,36 +139,36 @@ nav ul li img {
   border-radius: 3px;
   left: 14px;
   height: 3px;
-  transition: all .4s;
+  transition: all 0.4s;
   &:nth-of-type(1) {
-      top: 15px;
-      width: 45%;
+    top: 15px;
+    width: 45%;
   }
   &:nth-of-type(2) {
-      top: 23px;
-      width: 35%;
+    top: 23px;
+    width: 35%;
   }
   &:nth-of-type(3) {
-      top: 31px;
-      width: 20%;
+    top: 31px;
+    width: 20%;
   }
 }
 
-.openbtn.active span{
+.openbtn.active span {
   &:nth-of-type(1) {
-      width: 45%;
-      top: 18px;
-      left: 14px;
-      transform: translateY(6px) rotate(-135deg);
+    width: 45%;
+    top: 18px;
+    left: 14px;
+    transform: translateY(6px) rotate(-135deg);
   }
   &:nth-of-type(2) {
-      opacity: 0;
+    opacity: 0;
   }
   &:nth-of-type(3) {
-      width: 45%;
-      top: 30px;
-      left: 14px;
-      transform: translateY(-6px) rotate(135deg);
+    width: 45%;
+    top: 30px;
+    left: 14px;
+    transform: translateY(-6px) rotate(135deg);
   }
 }
 
@@ -183,7 +178,6 @@ nav ul li img {
   background-image: url("images/people-taking-part-h.jpeg");
   display: flex;
   position: relative;
-
 
   align-items: center;
   justify-content: center;
@@ -386,7 +380,6 @@ nav ul li img {
   justify-content: center;
   align-items: flex-start;
   gap: 145px;
-
 }
 .proj-top-left,
 .proj-top-right {
@@ -451,8 +444,6 @@ nav ul li img {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 10px;
- 
-
 }
 .stars {
   position: relative;
@@ -481,7 +472,6 @@ nav ul li img {
   align-items: flex-start;
   justify-content: center;
   gap: 23px;
-
 }
 .proj-bottom-header {
   display: flex;
@@ -707,9 +697,9 @@ agenda
   color: #d3d0d0;
 }
 .agenda-list:hover {
-scale: 1.5;
-background: #0072d8;
-color: white;
+  scale: 1.5;
+  background: #0072d8;
+  color: white;
 }
 
 .agenda-subject-arc-top {
@@ -740,20 +730,20 @@ color: white;
 #contacts {
   padding: 110px 220px;
   height: 100vh;
- 
+
   width: 100%;
   overflow-y: hidden;
   position: relative;
   display: flex;
 }
-#contacts::before{
+#contacts::before {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #034EA2;
+  background-color: #034ea2;
   opacity: 0.25;
   z-index: 10;
 }
@@ -766,10 +756,8 @@ color: white;
   padding: 0;
   margin: 0;
   display: block;
-  
 
   transition: 750ms ease;
-
 }
 
 .carousel-item {
@@ -793,98 +781,95 @@ color: white;
   width: 13px;
   height: 13px;
   border-radius: 10px;
-  background: #7FC4FD;
+  background: #7fc4fd;
   transition: 350ms ease;
   z-index: 11;
   cursor: pointer;
   border: none;
 }
-.active-bullet{
-  background: #007FEB;
+.active-bullet {
+  background: #007feb;
 }
-.contacts-content{
+.contacts-content {
   z-index: 10;
   color: white;
   font-family: "HelveticaNeueLTGeo55Roman";
-font-size: 16px;
-
+  font-size: 16px;
 }
-.contacts-content header{
+.contacts-content header {
   display: flex;
   align-items: center;
   gap: 16px;
   font-family: "HelveticaNeueLTGeo55RomanCaps";
-font-size: 34px;
-font-weight: bold;
+  font-size: 34px;
+  font-weight: bold;
 
-margin-bottom: 44px;
+  margin-bottom: 44px;
 }
-.contacts-content header img{
+.contacts-content header img {
   width: 39px;
   height: 38px;
-  filter: brightness(10000%); 
+  filter: brightness(10000%);
 }
 #contacts ul li {
   margin-bottom: 25px;
 }
-footer{
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #034EA2;
+  background: #034ea2;
   padding: 60px 100px;
   font-family: "HelveticaNeueLTGeo55Roman";
-font-size: 14px;
-gap: 60px;
-height: 200px;
-width: 100%;
-color: white;
+  font-size: 14px;
+  gap: 60px;
+  height: 200px;
+  width: 100%;
+  color: white;
 }
 
-footer ul{
-  border-inline: 1px solid  rgba(255, 255, 255, 0.596);
+footer ul {
+  border-inline: 1px solid rgba(255, 255, 255, 0.596);
   padding-left: 20px;
   padding-right: 20px;
   height: 200px;
   max-width: 250px;
   width: 100%;
-  display: flex;flex-direction: column;
-  gap:10px;
-  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
   justify-content: center;
 }
-footer ul li a{
+footer ul li a {
   color: rgba(255, 255, 255, 0.596);
   padding: 10px 2px;
-cursor: pointer;
-max-width: 160px;
-width: 100%;
-transition: 350ms ease;
+  cursor: pointer;
+  max-width: 160px;
+  width: 100%;
+  transition: 350ms ease;
 }
-footer ul li a:hover{
+footer ul li a:hover {
   color: rgb(255, 255, 255);
-
 }
-.footer-center{
+.footer-center {
   display: flex;
   max-width: 500px;
   width: 100%;
 
   justify-content: space-between;
 }
-.footer-socials{
+.footer-socials {
   display: flex;
   align-items: center;
- 
 }
-.footer-socials a:nth-child(2){
+.footer-socials a:nth-child(2) {
   border-left: 1px solid rgba(255, 255, 255, 0.596);
   padding-left: 10px;
   margin-left: 10px;
-
 }
-.scroll-up{
-  background: #0072D8;
+.scroll-up {
+  background: #0072d8;
   width: 200px;
   rotate: -90deg;
   text-align: center;
@@ -894,221 +879,223 @@ footer ul li a:hover{
   align-items: center;
   justify-content: center;
   gap: 15px;
- 
 }
-.scroll-up a{
+.scroll-up a {
   height: 100%;
   margin-top: -7px;
   cursor: pointer;
   color: white;
 }
-.scroll-up img{
+.scroll-up img {
   rotate: 90deg;
   width: 12px;
   height: 12px;
 }
 
-@media(width < 1550px){
-  #project,#agenda,#conference{
-    padding: 110px 140px ;
-
+@media (width < 1550px) {
+  #project,
+  #agenda,
+  #conference {
+    padding: 110px 140px;
   }
-  .proj-top{
+  .proj-top {
     gap: 40px;
   }
-  .proj-organization{
+  .proj-organization {
     padding: 24px 30px;
   }
-  .proj-organization .left{
+  .proj-organization .left {
     padding-right: 40px;
-
   }
-  footer{
+  footer {
     padding: 60px 20px;
     gap: 30px;
   }
 }
-@media(width < 1350px){
-  .agenda-subject-arc-top,.agenda-subject-arc-bottom{
+@media (width < 1350px) {
+  .agenda-subject-arc-top,
+  .agenda-subject-arc-bottom {
     width: 175px;
     height: 175px;
   }
-  .agenda-subject-arc-top{
+  .agenda-subject-arc-top {
     top: -125px;
     left: -125px;
   }
-  
-  .agenda-subject-arc-bottom{
+
+  .agenda-subject-arc-bottom {
     right: -135px;
   }
-  .agenda-content{
+  .agenda-content {
     gap: 40px;
   }
 }
-@media(width < 1240px){
-  #project,#agenda,#conference{
-    padding: 110px 40px ;
-
+@media (width < 1240px) {
+  #project,
+  #agenda,
+  #conference {
+    padding: 110px 40px;
   }
-  footer p{
+  footer p {
     gap: 10px;
     font-size: 11px;
   }
-  #agenda{
+  #agenda {
     padding-top: 50px;
   }
-  .agenda-content{
+  .agenda-content {
     gap: 20px;
     padding: 0;
   }
-  .navigation{
+  .navigation {
     padding-inline: 30px;
   }
   nav ul {
     display: flex;
     gap: 10px;
   }
-  .proj-top p{
+  .proj-top p {
     font-size: 14px;
   }
-  .proj-top-left .header p{
+  .proj-top-left .header p {
     font-size: 32px;
   }
-  .agenda-subject-arc-top,.agenda-subject-arc-bottom{
+  .agenda-subject-arc-top,
+  .agenda-subject-arc-bottom {
     width: 115px;
     height: 115px;
   }
-  .agenda-subject-arc-top{
+  .agenda-subject-arc-top {
     top: -75px;
     left: -75px;
   }
-  
-  .agenda-subject-arc-bottom{
+
+  .agenda-subject-arc-bottom {
     right: -75px;
     bottom: -55px;
   }
 }
-@media(width < 1040px){
-  #project,#agenda,#conference{
-    padding: 110px 40px ;
-
+@media (width < 1040px) {
+  #project,
+  #agenda,
+  #conference {
+    padding: 110px 40px;
   }
-  .footer-center{
+  .footer-center {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
-  .navigation{
+  .navigation {
     padding-inline: 30px;
   }
   nav ul {
     display: flex;
     gap: 15px;
   }
-  .proj-top p{
+  .proj-top p {
     font-size: 14px;
   }
-  .proj-top-left .header p{
+  .proj-top-left .header p {
     font-size: 32px;
   }
-  .agenda-subject li{
+  .agenda-subject li {
     gap: 15px;
   }
   .agenda-list p {
     font-size: 12px;
   }
-  .agenda-sponsors{
+  .agenda-sponsors {
     gap: 0;
   }
 }
 
-
-
-@media(width < 969px){
-  #project,#agenda,#conference{
-    padding: 70px 20px ;
-
+@media (width < 969px) {
+  #project,
+  #agenda,
+  #conference {
+    padding: 70px 20px;
   }
-  #hero{
+  #hero {
     height: 100vh;
-
   }
-  .proj-top{
+  .proj-top {
     flex-direction: column;
     gap: 0;
   }
-  .proj-top-left,.proj-top-right{
+  .proj-top-left,
+  .proj-top-right {
     gap: 20px;
   }
-  .proj-top-right{
+  .proj-top-right {
     margin-top: 90px;
   }
-  .countdown{
+  .countdown {
     gap: 0px;
     justify-content: center;
   }
   .countdown-item {
     font-size: 14px;
   }
-  .countdown-label{
+  .countdown-label {
     font-size: 18px;
   }
   #hero main button {
     width: 350px;
   }
-  
-  .navigation{
+
+  .navigation {
     padding-inline: 15px;
   }
   nav ul {
     display: flex;
     gap: 12px;
   }
-  .proj-top p{
+  .proj-top p {
     font-size: 14px;
   }
-  .proj-top-left .header p{
+  .proj-top-left .header p {
     font-size: 32px;
   }
-  #contacts{
+  #contacts {
     padding: 110px 100px;
   }
 }
 
-@media(width < 906px){
-  .openbtn{
+@media (width < 906px) {
+  .openbtn {
     display: block;
   }
-  #project,#agenda,#conference{
-    padding: 70px 20px ;
-
+  #project,
+  #agenda,
+  #conference {
+    padding: 70px 20px;
   }
-  footer{
+  footer {
     gap: 0;
   }
-  footer ul{
+  footer ul {
     margin-left: 10px;
   }
-  .nav-wrapper{
+  .nav-wrapper {
     position: sticky;
     height: 0;
-    top:0;
+    top: 0;
     left: -100%;
     transition: 550ms ease;
-     
   }
-  .navigation{
+  .navigation {
     position: absolute;
-    
+
     height: 100vh;
     width: 250px;
     padding: 50px 0;
-    
+
     flex-direction: column;
     background: white;
     transition: 550ms ease;
-    
-    transform:translate(-255px,50%) 
+
+    transform: translate(-255px, 50%);
   }
   nav ul {
     display: flex;
@@ -1116,36 +1103,34 @@ footer ul li a:hover{
     align-items: center;
     gap: 12px;
   }
-  .nav-item{
+  .nav-item {
     width: 100%;
   }
-  .nav-arc{
+  .nav-arc {
     opacity: 1;
   }
-  .nav-item a{
+  .nav-item a {
     width: 100%;
     height: 100%;
   }
-  .proj-top p{
+  .proj-top p {
     font-size: 14px;
   }
-  .proj-top-left .header p{
+  .proj-top-left .header p {
     font-size: 32px;
   }
-  #contacts{
+  #contacts {
     padding: 110px 100px;
   }
-  .toggle-nav{
-  
-    transform:translate(0,50%) ;   
-height: 100vh;
-transition: 550ms ease;
-
+  .toggle-nav {
+    transform: translate(0, 50%);
+    height: 100vh;
+    transition: 550ms ease;
   }
 }
 
-@media (width < 888px){
-  .conference-content{
+@media (width < 888px) {
+  .conference-content {
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -1155,192 +1140,201 @@ transition: 550ms ease;
     height: 80px;
     padding-top: 0;
     padding: 10px;
-    display: flex;align-items: center;justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
-  .proj-organization{
+  .proj-organization {
     flex-direction: column;
     padding: 12px 15px;
   }
-  .proj-organization .left{
+  .proj-organization .left {
     padding: 0;
   }
-  .proj-organization .right{
+  .proj-organization .right {
     padding: 0;
-    border:none;
+    border: none;
   }
-  .conference-schedule{
+  .conference-schedule {
     flex-direction: column-reverse;
     align-items: center;
     gap: 20px;
   }
-  .conference-schedule-right{
+  .conference-schedule-right {
     padding-inline: 150px;
   }
-  .agenda-subject{
+  .agenda-subject {
     width: 80%;
   }
 }
 
-@media (width < 780px){
-  #project,#agenda,#conference{
-    padding: 20px 40px ;
-
+@media (width < 780px) {
+  #project,
+  #agenda,
+  #conference {
+    padding: 20px 40px;
   }
-  footer{
+  footer {
     flex-direction: column;
     height: 100%;
     align-items: flex-start;
     position: relative;
-    gap:10px
+    gap: 10px;
   }
-  .footer-center{
+  .footer-center {
     align-items: flex-start;
-    gap:15px
+    gap: 15px;
   }
   footer ul {
-    border:  none;
+    border: none;
     align-items: flex-start;
     padding-left: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.596);
     border-bottom: 1px solid rgba(255, 255, 255, 0.596);
   }
-  .scroll-up{
+  .scroll-up {
     position: absolute;
     right: 0;
     top: 26.5%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  .agenda-sponsors{
+  .agenda-sponsors {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-  } .conference-schedule-right{
+  }
+  .conference-schedule-right {
     padding-inline: 70px;
   }
 }
 
-@media(width< 550px){
-  .stars{
+@media (width< 550px) {
+  .stars {
     margin-top: -45px;
     margin-left: -55px;
   }
 }
 
-@media(width < 480px){
-  #hero main{
-    gap:70px
+@media (width < 480px) {
+  #hero main {
+    gap: 70px;
   }
-  #project,#agenda,#conference{
-    padding: 20px 15px ;
-
+  #project,
+  #agenda,
+  #conference {
+    padding: 20px 15px;
   }
-  #hero main button{
+  #hero main button {
     margin-top: 0;
   }
-  #agenda{
+  #agenda {
     gap: 0;
   }
-  #contacts{
+  #contacts {
     padding: 20px;
   }
-  .content{
+  .content {
     font-size: 14px;
     padding: 10px;
   }
-  #hero h1, .proj-top-left .header p, .proj-top-right h1, .proj-bottom-header p, .conference-header p, .agenda-header p, .contacts-content header p,.agenda-content h2{
+  #hero h1,
+  .proj-top-left .header p,
+  .proj-top-right h1,
+  .proj-bottom-header p,
+  .conference-header p,
+  .agenda-header p,
+  .contacts-content header p,
+  .agenda-content h2 {
     font-size: 24px;
   }
-  .agenda-subject{
+  .agenda-subject {
     width: 100%;
   }
-  .agenda-subject li{
+  .agenda-subject li {
     font-size: 12px;
     padding: 5px;
   }
-  .agenda-subject-arc-top, .agenda-subject-arc-bottom{
+  .agenda-subject-arc-top,
+  .agenda-subject-arc-bottom {
     width: 80px;
     height: 80px;
-  
   }
-  .agenda-subject-arc-top{
+  .agenda-subject-arc-top {
     left: -35px;
     top: -50px;
-
   }
-  .agenda-subject-arc-bottom{
+  .agenda-subject-arc-bottom {
     bottom: -55px;
     right: -35px;
   }
-  .conference-schedule-right{
+  .conference-schedule-right {
     padding-inline: 20px;
   }
-  .carousel-btn{
+  .carousel-btn {
     width: 20px;
     height: 20px;
   }
-  .carousel img{
+  .carousel img {
     background-size: cover;
   }
-  .conference-content p{
+  .conference-content p {
     padding: 5px;
     font-size: 14px;
   }
-  #contacts ul li{
+  #contacts ul li {
     margin-bottom: 15px;
     font-size: 14px;
   }
-  .agenda-desc{
+  .agenda-desc {
     padding: 10px;
     font-size: 14px;
-
   }
-  .agenda-sponsors{
+  .agenda-sponsors {
     padding: 10px;
   }
-  .countdown-item img{
+  .countdown-item img {
     width: 20px;
     /* height: 20px; */
   }
-  #hero main button{
+  #hero main button {
     max-width: 300px;
     font-size: 16px;
     font-weight: bold;
   }
-  form{
+  form {
     padding: 10px 20px;
   }
-  .popup{
+  .popup {
     width: 100%;
     height: 100%;
     z-index: 102;
     border-radius: 0;
   }
 }
-@media(width < 385px){
-  #agenda{
+@media (width < 385px) {
+  #agenda {
     padding: 10px 0;
   }
-  .countdown-item{
+  .countdown-item {
     padding-left: 5px;
   }
-  .proj-top-right-header h1{
-width: 100px;  }
-  .stars{
-    margin-left: 0px;
-  }
-  .agenda-sponsors{
-    padding: 10px;
-  }
-  .agenda-sponsors img{
-    width: 100%;
-  }
-  .agenda-sponsors img:nth-child(3)
-  {
+  .proj-top-right-header h1 {
     width: 100px;
   }
-  #contacts ul li{
+  .stars {
+    margin-left: 0px;
+  }
+  .agenda-sponsors {
+    padding: 10px;
+  }
+  .agenda-sponsors img {
+    width: 100%;
+  }
+  .agenda-sponsors img:nth-child(3) {
+    width: 100px;
+  }
+  #contacts ul li {
     margin-bottom: 8px;
     font-size: 12px;
   }
 }
-
