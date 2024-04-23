@@ -93,6 +93,7 @@ carouselBtns.forEach((btn,idx)=>{
 
 
     carousel.style.transform = `translateY(-${idx * 100 }%)`;
+    
 
   })
   
