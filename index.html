@@ -497,9 +497,11 @@
       let conferenceTL = gsap.timeline({
         scrollTrigger: {
           trigger: ".conf",
-          start: "top center",
-          end: "60% -10%",
+          start: "10% center",
+          end: "70% -50%",
           scrub: true,
+          markers:true
+          
        
         },
       });
@@ -518,10 +520,10 @@
       });
       conferenceTL.to(".conf-box-tl", {
         duration: 2,
-        y: 360,
+        y: 30,
         opacity: 0,
         delay: 0.5,
-        stagger: 0.2,
+        stagger: 0.5,
         ease: "sine.out",
         force3D: true,
       });
@@ -531,6 +533,7 @@
         opacity: 0,
         delay: 0.5,
         ease: "sine.out",
+        
       });
       conferenceTL.to(".conference-schedule-right", {
         duration: 2,
@@ -546,6 +549,7 @@
           start: "top 60%",
           end: "40% 80%",
           scrub: true,
+        
           
        
         },
@@ -591,17 +595,17 @@
      
       })
       
-      agendaBottomTl.to('.agenda-subject-arc-top',{
-        x:100,
+      // agendaBottomTl.to('.agenda-subject-arc-top',{
+      //   x:100,
       
        
-        opacity:0
-      })
-      agendaBottomTl.to('.agenda-subject-arc-bottom',{
-        x:100,
-        duration:1,
-        opacity:0
-      })
+      //   opacity:0
+      // })
+      // agendaBottomTl.to('.agenda-subject-arc-bottom',{
+      //   x:100,
+      //   duration:1,
+      //   opacity:0
+      // })
 
 
 

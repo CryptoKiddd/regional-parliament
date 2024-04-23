@@ -1247,6 +1247,9 @@ footer ul li a:hover {
   .agenda-content h2 {
     font-size: 24px;
   }
+  .conference-header p{
+    font-size: 20px;
+  }
   .agenda-subject {
     width: 100%;
   }
@@ -1323,6 +1326,9 @@ footer ul li a:hover {
   }
   .proj-top-right-header h1 {
     width: 100px;
+  }
+  .conference-header p{
+    font-size: 18px;
   }
   .stars {
     margin-left: 0px;

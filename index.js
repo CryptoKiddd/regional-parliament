@@ -1,5 +1,5 @@
 function countdown() {
-    const endDate = new Date("2024-04-22T23:59:59").getTime(); // atvlis wertili
+    const endDate = new Date("2024-04-25T23:59:59").getTime(); // atvlis wertili
     const now = new Date().getTime();
     const distance = endDate - now;
   
@@ -55,15 +55,27 @@ closePopup.addEventListener("click",()=>{
 
 
 
+const baseUrl = "http://127.0.0.1:5500/";
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+    e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
+    const targetId = this.getAttribute('href').substring(1); // Remove the '#' from the href
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth'
       });
+
+      // Update the URL
+      const newUrl = baseUrl + this.getAttribute("href");
+      history.pushState({}, '', newUrl);
+    }
   });
 });
+
 
 
 
